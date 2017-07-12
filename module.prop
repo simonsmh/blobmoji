@@ -4,4 +4,4 @@ version=1.39
 versionCode=139
 author=simonsmh
 description=Replace system emoji with latest NotoColorEmoji from official repo.
-template=3
+template=4
