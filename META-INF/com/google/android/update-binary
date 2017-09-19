@@ -157,6 +157,14 @@ $POSTFSDATA && cp -af $INSTALLER/common/post-fs-data.sh $MODPATH/post-fs-data.sh
 # service mode scripts
 $LATESTARTSERVICE && cp -af $INSTALLER/common/service.sh $MODPATH/service.sh
 
+# migrating fonts.xml
+ui_print "- Migrating fonts.xml"
+if [ -f "/system/etc/fonts.xml" ]; then
+  mkdir -p $MODPATH/system/etc/
+  cp -af /system/etc/fonts.xml $MODPATH/system/etc/fonts.xml
+  sed -i '/<family lang=\"und-Zsye\">/,/<\/family>/ {/<\/family>/! d;/<\/family>/ s/.*/<family lang="und-Zsye">\n<font weight="400" style="normal">NotoColorEmoji-old.ttf<\/font>\n<\/family>\n<family lang="und-Zsye">\n<font weight="400" style="normal">NotoColorEmoji.ttf<\/font>\n<\/family>/};/^$/d' $MODPATH/system/etc/fonts.xml
+fi
+
 ui_print "- Setting permissions"
 set_permissions
 

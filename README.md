@@ -1,13 +1,13 @@
-#### Magisk NotoColorEmoji Replacer
+#### NotoColorEmoji Blob Patch
 
-Bring blobs back again!  
-https://github.com/googlei18n/noto-emoji/
+Latest NotoColorEmoji with blobs back again!  
+Fonts are from https://github.com/googlei18n/noto-emoji/
 
 #### NOTICE
 
 * You should use latest Magisk Manager to install this module. If you meet any problem under installation from Magisk Manager, please try to install it from recovery.
 * Recent fixes:
-Magisk v14 Template 1400 compatabilities
+Latest NotoColorEmoji 2.002 with blobs back again.
 
 #### Credit & Support
 

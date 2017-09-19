@@ -1,7 +1,7 @@
 id=notocoloremoji-replacer
-name=NotoColorEmoji Replacer
-version=1.39
-versionCode=139
+name=NotoColorEmoji Blob Patch
+version=2.002
+versionCode=2000
 author=simonsmh
-description=Replace system emoji with latest NotoColorEmoji from official repo.
+description=Latest NotoColorEmoji with blobs back again.
 template=1400
