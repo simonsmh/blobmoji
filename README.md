@@ -1,13 +1,14 @@
 #### NotoColorEmoji Blob Patch
 
-Latest NotoColorEmoji with blobs back again!  
-Fonts are from https://github.com/googlei18n/noto-emoji/
+Latest NotoColorEmoji with blobs back again! You can use both Unicode 10.0 and blob emoji now.  
+NotoColorEmoji Latest + Blob patch for Marshmallow, Nougat and Oreo devices.
+Fonts are provided by [Google](https://github.com/googlei18n/noto-emoji).
 
 #### NOTICE
 
 * You should use latest Magisk Manager to install this module. If you meet any problem under installation from Magisk Manager, please try to install it from recovery.
-* Recent fixes:
-Latest NotoColorEmoji 2.002 with blobs back again.
+* Recent fixes:  
+**Reinstall needed!** Newly implemented systemless fonts.xml working with NotoSansCJK (Nougat & Oreo)
 
 #### Credit & Support
 
