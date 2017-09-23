@@ -1,7 +1,7 @@
 id=notocoloremoji-replacer
 name=NotoColorEmoji Blob Patch
 version=2.002
-versionCode=2001
+versionCode=2002
 author=simonsmh
 description=Latest NotoColorEmoji with blobs back again.
 template=1400
