@@ -4,4 +4,4 @@ version=2.002
 versionCode=2002
 author=simonsmh
 description=Latest NotoColorEmoji with blobs back again.
-template=1400
+minMagisk=1500
