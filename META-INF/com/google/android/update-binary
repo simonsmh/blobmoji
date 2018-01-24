@@ -136,6 +136,28 @@ $POSTFSDATA && cp -af $INSTALLER/common/post-fs-data.sh $MODPATH/post-fs-data.sh
 # service mode scripts
 $LATESTARTSERVICE && cp -af $INSTALLER/common/service.sh $MODPATH/service.sh
 
+# migrating fonts.xml
+ui_print "- Migrating fonts.xml"
+[[ -d /sbin/.core/img ]] && IMGPATH=/sbin/.core/img || IMGPATH=/dev/tmp/magisk_img
+[[ -d /sbin/.core/mirror ]] && MIRRORPATH=/sbin/.core/mirror || unset MIRRORPATH
+FILE=fonts.xml
+FILEPATH=/system/etc/
+FINALPATH=/.core/
+if [ -f $MIRRORPATH$FILEPATH$FILE ]; then
+  mkdir -p $MODPATH$FILEPATH
+  if [ ! -d $IMGPATH/notosanscjk-nougat ]; then
+    ui_print "- Skipping compatability fixes"
+    cp -af $MIRRORPATH$FILEPATH$FILE $IMGPATH$FINALPATH$FILE
+  fi
+  ln -sf /sbin/.core/img$FINALPATH$FILE $MODPATH$FILEPATH$FILE
+  sed -i '/<family lang=\"und-Zsye\">/,/<\/family>/ {/<\/family>/! d;/<\/family>/ s/.*/<family lang="und-Zsye">\n<font weight="400" style="normal">NotoColorEmoji-old.ttf<\/font>\n<\/family>\n<family lang="und-Zsye">\n<font weight="400" style="normal">NotoColorEmoji.ttf<\/font>\n<\/family>/};/^$/d' $IMGPATH$FINALPATH$FILE
+else
+  ui_print "- Migration FAILED. Nothing have done to your system."
+fi
+
+# failover
+[[ -f $IMGPATH$FINALPATH$FILE ]] || { rm -rf $MODPATH$FILEPATH$FILE && ui_print "! Error ! Please Upload log to the developer.";}
+
 ui_print "- Setting permissions"
 set_permissions
 
