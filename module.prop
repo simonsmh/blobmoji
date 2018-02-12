@@ -1,7 +1,7 @@
-id=notocoloremoji-replacer
-name=NotoColorEmoji Blob Version
-version=3.0
-versionCode=30000
-author=thayerfox & simonsmh
-description=Latest Homemade NotoColorEmoji with Blobs back again.
+id=blobmoji
+name=Blobmoji
+version=1.0
+versionCode=1
+author=C1710 (port by simonsmh)
+description=Noto Color Emoji with Blobs enabled.
 minMagisk=1500

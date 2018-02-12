@@ -41,7 +41,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print " Magisk NotoColorEmoji Replacer"
+  ui_print "        Magisk Blobmoji        "
   ui_print "*******************************"
 }
 
