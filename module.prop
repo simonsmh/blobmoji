@@ -1,7 +1,7 @@
 id=blobmoji
 name=Blobmoji
-version=262ccf5
-versionCode=5
+version=test_version_2
+versionCode=6
 author=C1710 (ported by simonsmh)
 description=Noto Color Emoji with Blobs enabled.
 minMagisk=1500
