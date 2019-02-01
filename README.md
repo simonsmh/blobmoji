@@ -10,11 +10,11 @@ NotoColorEmoji fonts are provided by [C1710's project](https://github.com/C1710/
 #### NOTICE
 
 * You should use latest Magisk Manager to install this module. If you meet any problem under installation from Magisk Manager, please try to install it from recovery.
-* Recent fixes:  
-Bring up C1710's blobmoji.
+* Recent fixes:
+Fix for Samsung devices.
 
 #### Credit & Support
 
-* Copyright (C) 2018 simonsmh
+* Copyright (C) 2018-2019 simonsmh
 * Any issue or pull request is welcomed.
 * Star this module at [GitHub](https://github.com/Magisk-Modules-Repo/magisk-notocoloremoji-replacer).
