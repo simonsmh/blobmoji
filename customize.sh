@@ -7,6 +7,3 @@ do
     ui_print "- Copying fonts files to $i"
     cp -f $MODPATH/system/fonts/Blobmoji.ttf $MODPATH/system/fonts/$i
 done
-
-ui_print "- Setting permissions"
-set_perm_recursive $MODPATH 0 0 0755 0644
