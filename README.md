@@ -17,10 +17,10 @@ If you want to use this font - there's a [Wiki page](https://github.com/C1710/bl
 
 * You should use latest Magisk Manager to install this module. If you meet any problem under installation from Magisk Manager, please try to install it from recovery.
 * Recent fixes:
-Update fonts from emoji12 branch.
+Update project structure.
 
 ## Credit & Support
 
-* Copyright (C) 2018-2019 simonsmh
+* Copyright (C) 2018-2020 simonsmh
 * Any issue or pull request is welcomed.
 * Star this module at [GitHub](https://github.com/Magisk-Modules-Repo/blobmoji).
