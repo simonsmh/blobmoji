@@ -1,3 +1,7 @@
+# !!DEPRECATED!!
+
+Please use https://github.com/Magisk-Modules-Repo/Fontchanger and this repo is no longer maintained.
+
 # Blobmoji
 
 ![Noto Emoji with Blobs enabled](https://github.com/C1710/blobmoji/raw/emoji12/images/noto.png)
